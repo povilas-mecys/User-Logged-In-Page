@@ -17,7 +17,8 @@ ed11y-element-panel,
       ========================= */
 .path-user .page_header_media.auth-role-contain {
   animation: blur-move 4s;
-  background: #e8f2f6 url("https://web-sandbox.brown.edu/themes/custom/brown/static/images/background_green.png") center/cover no-repeat;
+  background: url('images/background_green.png') no-repeat center center;
+  background-size: cover;
   border-bottom: 1px solid rgba(127, 217, 203, 0.5);
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
   height: auto;
