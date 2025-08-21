@@ -1,0 +1,316 @@
+/* =========================
+   ELEMENTS HIDDEN SITE-WIDE
+   ========================= */
+.ed11y-buttonbar,
+.path-user .recently-edited,
+.page_theme_overflow .page_wrapper:before,
+.header,
+.skip_link,
+#toolbar-administration,
+.alert--menuheight {
+  display: none !important;
+}
+
+/* =========================
+      PAGE HEADER MEDIA
+      ========================= */
+.path-user .page_header_media.auth-role-contain {
+  animation: blur-move 4s;
+  background: #e8f2f6 url("https://web-sandbox.brown.edu/themes/custom/brown/static/images/background_green.png") center/cover no-repeat;
+  border-bottom: 1px solid rgba(127, 217, 203, 0.5);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  height: auto;
+  min-height: auto;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+/* =========================
+      AUTH ROLE MESSAGE BOX
+      ========================= */
+.path-user .auth-role.message-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 60px auto;
+  padding: 24px 24px 40px !important;
+}
+
+.path-user .auth-role.message-box p {
+  line-height: 1.5;
+  padding: 0;
+}
+
+.path-user .message-box img {
+  height: 64px;
+  left: 0;
+  position: relative;
+  top: 0;
+  transform: none;
+  width: 64px;
+}
+
+@media only screen and (min-width: 740px) {
+  .path-user .auth-role.message-box {
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px 40px 40px !important;
+  }
+}
+
+/* =========================
+      SECTION LAYOUT
+      ========================= */
+.path-user .auth-role .section {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: grid;
+  gap: 8px;
+  margin-top: -60px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 740px) {
+  .path-user .auth-role .section {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .path-user .auth-role .section {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.path-user .auth-role .section .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.path-user .auth-role .section .row .col {
+  margin-bottom: 0;
+}
+
+.path-user .auth-role .section .row.analytics {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transform: translateY(80px);
+}
+
+/* =========================
+      COMPONENT ITEM STYLING
+      ========================= */
+.path-user .auth-role .section .row .component_item {
+  align-items: center;
+  align-self: stretch;
+  background: #fff;
+  border: 1px solid #efece5;
+  border-radius: 2px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 24px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 740px) {
+  .path-user .auth-role .section .row .component_item {
+    padding: 24px 40px;
+  }
+}
+
+.path-user .auth-role .section .row .component_item.analytics {
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 740px) {
+  .path-user .auth-role .section .row .component_item.analytics {
+    padding: 24px 40px 40px;
+  }
+}
+
+/* =========================
+      TRAINING ROW ITEM WIDTHS
+      ========================= */
+.path-user .auth-role .section .row.training .component_item> :nth-child(1) {
+  align-self: flex-start;
+  width: 60px;
+}
+
+.path-user .auth-role .section .row.training .component_item> :nth-child(2) {
+  width: 100%;
+}
+
+.path-user .auth-role .section .row.training .component_item> :nth-child(3) {
+  display: none;
+}
+
+@media only screen and (min-width: 980px) {
+  .path-user .auth-role .section .row.training .component_item> :nth-child(1) {
+    flex: 1;
+  }
+
+  .path-user .auth-role .section .row.training .component_item> :nth-child(2) {
+    flex: 6;
+  }
+
+  .path-user .auth-role .section .row.training .component_item> :nth-child(3) {
+    display: block;
+    flex: 3;
+  }
+}
+
+/* =========================
+      IMAGES
+      ========================= */
+.path-user .auth-role .section img,
+.path-user .auth-role .section .row.analytics .col:first-of-type img {
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.25s, filter 0.25s;
+  width: 60px;
+}
+
+.path-user .auth-role .section a img:hover {
+  filter: grayscale(1);
+  transform: scale(1.1);
+}
+
+/* =========================
+      TYPOGRAPHY & CONTENT
+      ========================= */
+.path-user .auth-role .section a,
+.path-user .auth-role .section .analytics a {
+  border: none;
+}
+
+.path-user .auth-role .section h3 {
+  fill: #002b52;
+}
+
+.path-user .auth-role .section h3:not(.path-user .auth-role .section .analytics h3) {
+  font-family: CircularStd, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.path-user .auth-role .section a h3 {
+  color: #002b52;
+}
+
+.path-user .auth-role .section a:is(:hover, :focus) h3 {
+  color: #008672;
+  fill: #008672;
+}
+
+@media only screen and (min-width: 980px) {
+  .path-user .auth-role .section h3 svg {
+    display: none;
+  }
+}
+
+.path-user .auth-role .section h3:after {
+  display: none;
+}
+
+.path-user .auth-role .section .analytics h3 {
+  margin: 0;
+}
+
+.path-user .auth-role .section .analytics p {
+  color: var(--color-brown);
+  margin-bottom: 8px;
+}
+
+.path-user .auth-role .section p {
+  color: var(--color-brown);
+  font-size: 14px;
+  line-height: 1.25;
+  margin: 0;
+  min-height: auto;
+}
+
+/* =========================
+      BUTTONS
+      ========================= */
+.path-user .auth-role .section .buttons {
+  width: 100%;
+}
+
+.path-user .auth-role .section a.btn-small {
+  align-items: center;
+  background-color: #f8f7f5;
+  border: 1px solid var(--color-xlbeige);
+  border-bottom: 1px solid var(--color-xlbeige) !important;
+  border-radius: 2px;
+  color: var(--color-brown) !important;
+  display: inline-flex;
+  fill: var(--color-brown);
+  font-size: 12px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.path-user .auth-role .section a.btn-small:is(:hover, :focus) {
+  background-color: var(--color-brown);
+  color: var(--color-white) !important;
+}
+
+.path-user .auth-role .section a.btn-small:is(:hover, :focus) svg {
+  fill: var(--color-white);
+}
+
+.path-user .auth-role .section a.btn-blue {
+  background: #002b52;
+  color: var(--color-white) !important;
+}
+
+.path-user .auth-role .section a.btn-blue svg {
+  fill: var(--color-white);
+}
+
+.path-user .auth-role .section a.btn-blue:is(:hover, :focus) {
+  background: var(--color-brown);
+  color: var(--color-white) !important;
+}
+
+.path-user .auth-role.message-box .user-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  fill: white;
+}
+
+.path-user .auth-role.message-box .user-link:is(:hover, :focus) {
+  fill: #004d42;
+  color: #004d42;
+}
+
+/* =========================
+      FLEXIBLE COLUMN WRAPPER
+      ========================= */
+.path-user .auth-role .section div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-start;
+}

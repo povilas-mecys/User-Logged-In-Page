@@ -1,0 +1,2 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+.pdf-mobile,.pdf-desktop{display:none;}@media (orientation:portrait){.pdf-mobile{display:inline-block;}}@media (orientation:landscape){.pdf-desktop{display:inline-block;}}
