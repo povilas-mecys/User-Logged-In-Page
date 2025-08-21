@@ -1,5 +1,5 @@
 /* =========================
-   ELEMENTS HIDDEN SITE-WIDE
+   FOR TESTING ONLY 
    ========================= */
 .ed11y-buttonbar,
 ed11y-element-panel,
@@ -10,6 +10,10 @@ ed11y-element-panel,
 #toolbar-administration,
 .alert--menuheight {
   display: none !important;
+}
+
+.toolbar-horizontal.path-user main.page_inner {
+    margin-top: -40px;
 }
 
 /* =========================
